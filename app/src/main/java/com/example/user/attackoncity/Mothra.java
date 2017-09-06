@@ -14,8 +14,8 @@ public class Mothra extends Kaiju {
         return "The terrifying roar of an angry wind... full of dust!";
     }
 
-    public void attack(Vehicle target){
-        target.setHealthValue(attackValue);
+    public void attack(Damageable target){
+        target.takeDamage(attackValue);
     }
 
     public String travel(){

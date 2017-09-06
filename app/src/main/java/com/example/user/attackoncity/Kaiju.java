@@ -4,7 +4,7 @@ package com.example.user.attackoncity;
  * Created by user on 06/09/2017.
  */
 
-public abstract class Kaiju {
+public abstract class Kaiju implements Damageable{
 
     String name;
     int healthValue;
@@ -28,13 +28,18 @@ public abstract class Kaiju {
         return attackValue;
     }
 
-    public void setHealthValue(int attackValue) {
-        this.healthValue -= attackValue;
+//    public void setHealthValue(int attackValue) {
+//        this.healthValue -= attackValue;
+//    }
+
+
+    public void takeDamage(int damage) {
+        this.healthValue -= damage;
     }
 
     abstract String roar();
 
-    abstract void attack(Vehicle target);
+    abstract void attack(Damageable target);
 
     abstract String travel();
 }

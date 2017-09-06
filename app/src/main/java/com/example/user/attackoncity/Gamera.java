@@ -14,8 +14,8 @@ public class Gamera extends Kaiju {
         return "Beakly Gnashing (but really loud)!";
     }
 
-    public void attack(Vehicle target){
-        target.setHealthValue(attackValue);
+    public void attack(Damageable target){
+        target.takeDamage(attackValue);
     }
 
     public String travel() {

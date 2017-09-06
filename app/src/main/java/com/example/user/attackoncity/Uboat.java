@@ -10,11 +10,12 @@ public class Uboat extends Vehicle implements VehicularAttacks{
         super(type, healthValue, attackValue, weight);
     }
 
-    public void fire(Kaiju target) {
-        target.setHealthValue(attackValue);
+    public void fire(Damageable target) {
+        target.takeDamage(attackValue);
     }
 
-    public void ram(Kaiju target) {
-        target.setHealthValue(weight);
+    public void ram(Damageable target) {
+        target.takeDamage(weight);
     }
+
 }

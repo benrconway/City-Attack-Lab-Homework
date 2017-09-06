@@ -19,8 +19,8 @@ public class KaijuTest {
     public void before(){
         gamera = new Gamera("Joanne");
         mothra = new Mothra("Kevin");
-        tank = new Tank("Matilda", 500, 88);
-        uboat = new Uboat("Hilda", 300, 102);
+        tank = new Tank("Matilda", 500, 88, 250);
+        uboat = new Uboat("Hilda", 300, 102, 300);
     }
 
     @Test

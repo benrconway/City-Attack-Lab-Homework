@@ -5,6 +5,6 @@ package com.example.user.attackoncity;
  */
 
 public interface VehicularAttacks {
-    void fire(Kaiju target);
-    void ram(Kaiju target);
+    void fire(Damageable target);
+    void ram(Damageable target);
 }

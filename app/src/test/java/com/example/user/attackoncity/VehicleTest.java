@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
  * Created by user on 06/09/2017.
  */
 
-public class VehicleTest {
+public class VehicleTest{
 
     Tank tank;
     Uboat uboat;
@@ -36,5 +36,10 @@ public class VehicleTest {
     public void vehiclesHaveFirePower(){
         assertEquals(88, tank.getAttackValue());
         assertEquals(102, uboat.getAttackValue());
+    }
+
+    @Test
+    public void vehiclesCanRam(){
+
     }
 }
