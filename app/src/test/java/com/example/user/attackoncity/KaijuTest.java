@@ -37,4 +37,9 @@ public class KaijuTest {
         assertEquals(200, gamera.getAttackValue());
     }
 
+    @Test
+    public void monstersCanRoar(){
+        assertEquals("Beakly Gnashing (but really loud)!", gamera.roar());
+        assertEquals("The terrifying roar of an angry wind... full of dust!", mothra.roar());
+    }
 }
