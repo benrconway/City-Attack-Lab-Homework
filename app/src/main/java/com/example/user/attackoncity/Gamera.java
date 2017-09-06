@@ -13,4 +13,12 @@ public class Gamera extends Kaiju {
     public String roar(){
         return "Beakly Gnashing (but really loud)!";
     }
+
+    public void attack(Vehicle target){
+        target.setHealthValue(attackValue);
+    }
+
+    public String travel() {
+        return "Gamera swims silently into an ambush position!";
+    }
 }

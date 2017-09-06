@@ -16,8 +16,8 @@ public class VehicleTest {
 
     @Before
     public void before(){
-        tank = new Tank("Matilda", 500, 88);
-        uboat = new Uboat("Hilda", 300, 102);
+        tank = new Tank("Matilda", 500, 88, 250);
+        uboat = new Uboat("Hilda", 300, 102, 300);
     }
 
     @Test

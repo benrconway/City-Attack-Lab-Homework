@@ -6,8 +6,8 @@ package com.example.user.attackoncity;
 
 public class Tank extends Vehicle{
 
-    public Tank(String type, int healthValue, int attackValue){
-        super(type, healthValue, attackValue);
+    public Tank(String type, int healthValue, int attackValue, int weight){
+        super(type, healthValue, attackValue, weight);
     }
 
 }

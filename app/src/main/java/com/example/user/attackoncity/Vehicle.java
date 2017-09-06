@@ -8,11 +8,13 @@ public abstract class Vehicle {
     String type;
     int healthValue;
     int attackValue;
+    int weight;
 
-    public Vehicle(String type, int healthValue, int attackValue){
+    public Vehicle(String type, int healthValue, int attackValue, int weight){
         this.type = type;
         this.healthValue = healthValue;
         this.attackValue = attackValue;
+        this.weight = weight;
     }
 
     public String getType() {
@@ -26,4 +28,9 @@ public abstract class Vehicle {
     public int getAttackValue() {
         return attackValue;
     }
+
+    public void setHealthValue(int attackValue) {
+        this.healthValue -= attackValue;
+    }
 }
+

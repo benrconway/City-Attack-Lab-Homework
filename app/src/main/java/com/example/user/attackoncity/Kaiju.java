@@ -28,6 +28,13 @@ public abstract class Kaiju {
         return attackValue;
     }
 
+    public void setHealthValue(int attackValue) {
+        this.healthValue -= attackValue;
+    }
+
     abstract String roar();
 
+    abstract void attack(Vehicle target);
+
+    abstract String travel();
 }
